@@ -1,0 +1,47 @@
+
+
+/* Footer CSS */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #957305;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.social-media i {
+  font-size: 30px;
+  color: #8a1508;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-media i:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
