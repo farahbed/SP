@@ -1,6 +1,6 @@
 // Pricing.js
 import React from 'react';
-import '../assets/styles/cpn/_pricing.scss';
+import '../assets/styles/cpn/_Pricing.scss';
 
 function Pricing() {
   return (
