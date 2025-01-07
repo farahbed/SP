@@ -1,0 +1,250 @@
+/* _variables.scss */
+/* _mixins.scss */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out;
+}
+.header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.header .logo .gold {
+  color: #c2a661;
+}
+.header .logo .red {
+  color: #b22222;
+}
+.header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.header .nav-links li {
+  display: inline-block;
+}
+.header .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.header .nav-links a:hover {
+  color: #b22222;
+}
+.header .menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.header .menu-icon .menu-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #c2a661;
+  transition: transform 0.3s;
+}
+.header .nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #000;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  gap: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .logo {
+    font-size: 24px;
+  }
+}
+.site-presentation {
+  text-align: center;
+  padding: 4rem 0;
+}
+.site-presentation h2 {
+  font-size: 3rem;
+  color: #c2a661;
+}
+.site-presentation p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+.site-presentation .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.site-presentation .gallery img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.site-presentation .gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* _UpcomingEvent.scss */
+.upcoming-event {
+  background-color: #333;
+  padding: 2rem 0;
+  text-align: center;
+}
+.upcoming-event h2 {
+  font-size: 2rem;
+  color: #c2a661;
+}
+.upcoming-event .event-details {
+  margin: 1rem 0;
+}
+.upcoming-event .event-details p {
+  margin: 0.5rem 0;
+}
+.upcoming-event .event-details .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #b22222;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.upcoming-event .event-details .cta:hover {
+  background-color: #871a1a;
+}
+
+/* _Pricing.scss */
+.pricing {
+  padding: 3rem 0;
+  background-color: #000;
+  text-align: center;
+}
+.pricing h2 {
+  font-size: 2.5rem;
+  color: #c2a661;
+}
+.pricing .pricing-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.pricing .pricing-options .option {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+.pricing .pricing-options .option h3 {
+  color: #c2a661;
+  font-size: 1.5rem;
+}
+.pricing .pricing-options .option .price {
+  font-size: 1.8rem;
+  color: #b22222;
+  margin: 1rem 0;
+}
+.pricing .pricing-options .option p {
+  margin: 0.5rem 0;
+}
+.pricing .pricing-options .option .cta {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #b22222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.pricing .pricing-options .option .cta:hover {
+  background-color: #871a1a;
+}
+
+.footer {
+  background-color: #333;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer a {
+  color: #c2a661;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.footer a:hover {
+  color: #b22222;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,39 @@
+@use '../variables' as vars;
+@use '../mixins' as mix;
+
+.site-presentation {
+  text-align: center;
+  padding: 4rem 0;
+
+  h2 {
+    font-size: 3rem;
+    color: vars.$color-highlight;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: vars.$color-text;
+    margin: 1.5rem 0;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    img {
+      width: 200px; // Largeur fixe des images
+      height: 300px; // Hauteur fixe des images
+      object-fit: cover; // Les images remplissent leur conteneur sans distorsion
+      border-radius: 8px; // Coins arrondis pour un effet élégant
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Ombre subtile pour le style
+
+      &:hover {
+        transform: scale(1.05); // Zoom léger au survol
+        transition: transform 0.3s ease; // Animation fluide
+      }
+    }
+  }
+}

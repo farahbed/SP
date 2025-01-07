@@ -1,0 +1,58 @@
+/* _Pricing.scss */
+@use '../variables' as vars;
+@use '../mixins' as mix;
+
+
+.pricing {
+  padding: 3rem 0;
+  background-color: vars.$color-bg;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    color: vars.$color-highlight;
+  }
+
+  .pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .option {
+      background-color: vars.$color-border;
+      color: vars.$color-text;
+      padding: 1.5rem;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+
+      h3 {
+        color: vars.$color-highlight;
+        font-size: 1.5rem;
+      }
+
+      .price {
+        font-size: 1.8rem;
+        color: vars.$color-accent;
+        margin: 1rem 0;
+      }
+
+      p {
+        margin: 0.5rem 0;
+      }
+
+      .cta {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: vars.$color-accent;
+        color: vars.$color-text;
+        text-decoration: none;
+        border-radius: 4px;
+        &:hover {
+          background-color: darken(vars.$color-accent, 10%);
+        }
+      }
+    }
+  }
+}

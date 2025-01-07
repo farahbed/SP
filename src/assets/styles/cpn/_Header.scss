@@ -1,0 +1,110 @@
+/* Header.scss */
+@use '../variables' as vars;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: vars.$color-bg;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out;
+
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    .gold {
+      color: vars.$color-highlight; // Doré foncé
+    }
+
+    .red {
+      color: vars.$color-accent; // Rouge foncé
+    }
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      color: vars.$color-text;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: vars.$color-accent; // Rouge foncé au hover
+      }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+
+    .menu-bar {
+      width: 25px;
+      height: 3px;
+      background-color: vars.$color-highlight; // Doré foncé
+      transition: transform 0.3s;
+    }
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: vars.$color-bg;
+    padding: 15px;
+    border: 1px solid vars.$color-border;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    gap: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+}

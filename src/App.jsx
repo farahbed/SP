@@ -1,19 +1,22 @@
+// App.js
 import React from 'react';
-import Header from './components/Header/Header';
-import HeroSection from './components/HeroSection/HeroSection';
-import EventSection from './components/EventSection/EventSection';
-import Footer from './components/Footer/Footer';
-import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SitePresentation from './components/SitePresentation';
+import UpcomingEvent from './components/UpcomingEvent';
+import Pricing from './components/Pricing';
+import './assets/styles/App.scss';
 
 function App() {
   return (
     <div>
       <Header />
       <main className="main">
-      <HeroSection />
-      <EventSection />
+        <SitePresentation />
+        <UpcomingEvent />
+        <Pricing />
       </main>
-      <Footer /> 
+      <Footer />
     </div>
   );
 }

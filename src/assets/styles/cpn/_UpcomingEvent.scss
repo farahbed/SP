@@ -1,0 +1,36 @@
+/* _UpcomingEvent.scss */
+@use '../variables' as vars;
+@use '../mixins' as mix;
+
+.upcoming-event {
+  background-color: vars.$color-border;
+  padding: 2rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    color: vars.$color-highlight;
+  }
+
+  .event-details {
+    margin: 1rem 0;
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: vars.$color-accent;
+      color: vars.$color-text;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        background-color: darken(vars.$color-accent, 10%);
+      }
+    }
+  }
+}

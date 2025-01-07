@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.css';
+import '../assets/styles/cpn/_Header.scss';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,9 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <span className="gold">Speed</span><span className="red">Dating</span>
+        <span className="gold">Feel</span>
+        <span className="red">&</span>
+        <span className="gold">Match</span>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
         <span className="menu-bar"></span>
