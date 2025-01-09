@@ -1,5 +1,7 @@
 /* Header.scss */
-@use '../variables' as vars;
+@use '../variable' as vars;
+
+
 
 .header {
   display: flex;

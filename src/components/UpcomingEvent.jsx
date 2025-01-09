@@ -1,10 +1,10 @@
 // UpcomingEvent.js
 import React from 'react';
-import '../assets/styles/cpn/_UpcomingEvent.scss';
+import '../assets/styles/cpn/upcomingevent.scss';
 
 function UpcomingEvent() {
   return (
-    <section className="upcoming-event">
+    <section className="event">
       <h2>Prochain événement</h2>
       <p>Date : 01.01.2025</p>
       <p>Lieu : 1 rue de Paris, 75000 Paris</p>

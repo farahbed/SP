@@ -1,9 +1,7 @@
-/* _Pricing.scss */
-@use '../variables' as vars;
-@use '../mixins' as mix;
+@use '../variable' as vars;
+@use 'sass:color';
 
-
-.pricing {
+.price {
   padding: 3rem 0;
   background-color: vars.$color-bg;
   text-align: center;
@@ -49,8 +47,9 @@
         color: vars.$color-text;
         text-decoration: none;
         border-radius: 4px;
+
         &:hover {
-          background-color: darken(vars.$color-accent, 10%);
+          background-color: color.scale(vars.$color-accent, $lightness: -10%);
         }
       }
     }

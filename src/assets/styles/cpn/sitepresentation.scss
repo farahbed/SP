@@ -1,5 +1,7 @@
-@use '../variables' as vars;
 @use '../mixins' as mix;
+@use '../variable' as vars;
+
+
 
 .site-presentation {
   text-align: center;

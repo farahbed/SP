@@ -1,9 +1,9 @@
 // SitePresentation.js
 import React from 'react';
-import '../assets/styles/cpn/_SitePresentation.scss';
-import Img1 from "../assets/Images/Img1.jpg";
+import '../assets/styles/cpn/sitepresentation.scss';
+import Img1 from "../assets/Images/Imgc.webp";
 import Img2 from "../assets/Images/Imga.webp";
-import Img3 from "../assets/Images/Img3.jpg";
+import Img3 from "../assets/Images/Imgd.webp";
 import Img4 from "../assets/Images/Imgb.webp";
 
 function SitePresentation() {

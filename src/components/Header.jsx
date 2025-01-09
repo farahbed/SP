@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/styles/cpn/_Header.scss';
+import '../assets/styles/cpn/header.scss';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

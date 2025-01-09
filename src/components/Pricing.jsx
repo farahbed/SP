@@ -1,10 +1,10 @@
 // Pricing.js
 import React from 'react';
-import '../assets/styles/cpn/_Pricing.scss';
+import "../assets/styles/cpn/pricing.scss"
 
 function Pricing() {
   return (
-    <section className="pricing">
+    <section className="price">
       <h2>Tarifs</h2>
       <div className="pricing-options">
         <div className="option">
